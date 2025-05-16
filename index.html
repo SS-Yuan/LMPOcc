@@ -125,7 +125,7 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
@@ -138,8 +138,26 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        An overview of our LMPOcc framework. LMPOcc fristly generates Current Latent Features from surround-view images. Then it extracts spatially 
+        aligned Prior Features from global occupancy and integrates them via the Current-Prior Fusion Module to generate Refined Latent Features. The refined latent
+        features decode current occupancy logits, which are stored into corresponding locations in the global occupancy after visibility masking. Existing occupancy
+        priors at these locations are replaced by the updated logits. Finally, the occupancy logits are converted into local current occupancy prediction results.
+      </h2>
+    </div>
+  </div>
+</section>
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
