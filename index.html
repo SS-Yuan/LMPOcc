@@ -204,13 +204,23 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <h2 class="title is-3">Abstract</h2>
-      <!-- Your image here -->
-      <img 
-        src="static/images/pipeline.png"
-        alt="MY ALT TEXT"
-      />
-      <h2 class="subtitle has-text-centered">
+      <!-- 大标题 -->
+      <h1 class="title is-1 has-text-centered mb-6">Framework</h1>
+      
+      <!-- 图片 -->
+      <div class="columns is-centered">
+        <div class="column is-two-thirds">
+          <img 
+            src="static/images/pipeline.png" 
+            alt="Framework architecture diagram" 
+            class="image is-fullwidth"
+            style="border: 2px solid #333; border-radius: 8px;"
+          >
+        </div>
+      </div>
+
+      <!-- 副标题 -->
+      <h2 class="subtitle has-text-centered mt-6">
         LMPOcc fristly generates Current Latent Features from surround-view images. 
         Then it extracts spatiallyaligned Prior Features from global occupancy and integrates them via the Current-Prior Fusion Module to generate Refined Latent Features. 
         The refined latent features decode current occupancy logits, which are stored into corresponding locations in the global occupancy after visibility masking. 
